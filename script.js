@@ -126,7 +126,7 @@ let humanMoveQueue = false;
 let humanPathQueue = [];
 let humanAnimInterval = null;
 const END_CELL = {r:ROWS-1, c:COLS-1};
-const SPEEDS = { bfs:200, dfs:140, astar:80 };
+const SPEEDS = { bfs:300, dfs:220, astar:150 };
 
 let canvasH = document.getElementById('canvasHuman');
 let canvasA = document.getElementById('canvasAI');
