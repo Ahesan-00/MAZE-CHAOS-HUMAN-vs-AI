@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>AI vs HUMAN · MAZE CHALLENGE · BFS | DFS | A*</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="scanline"></div>
+<header id="header">
+  <div class="htitle">⚡ AI vs HUMAN · MAZE CHAOS</div>
+  <div class="hctrls">
+    <select id="algoSelect">
+      <option value="bfs">EASY (BFS)</option>
+      <option value="dfs">HARD (DFS)</option>
+      <option value="astar">INSANE (A*)</option>
+    </select>
+    <button class="hbtn go" id="startBtn">▶ START</button>
+    <button class="hbtn" id="resetBtn">↺ NEW</button>
+    <button class="hbtn sound-btn" id="soundToggleBtn">🔊 SOUND ON</button>
+  </div>
+</header>
+<div id="arena">
+  <div class="ppanel ph"><div class="plabel">🧬 HUMAN PLAYER</div><div class="mwrap bh"><canvas id="canvasHuman"></canvas></div><div class="pstats"><div class="sc sch" id="stepsHuman">STEPS:0</div><div class="sc sch" id="effHuman">EFF:—</div></div></div>
+  <div id="divider"><div class="dline"></div><div class="dicon">VS</div></div>
+  <div class="ppanel pa"><div class="plabel">🤖 AI</div><div class="mwrap ba"><canvas id="canvasAI"></canvas></div><div class="pstats"><div class="sc sca" id="stepsAI">STEPS:0</div><div class="sc sca" id="algoStatus">READY</div></div><div class="aith" id="aiThought">🌀 INITIALIZING...</div></div>
+</div>
+<div id="hud"><div class="hud-top"><div class="timer" id="timerCount">00:00</div><div class="progress-area"><div><div class="pr-label"><span style="color:#00f2ff">HUMAN PLAYER</span><span id="humanPerc">0%</span></div><div class="bar-bg"><div class="bar-human" id="humanBar"></div></div></div><div><div class="pr-label"><span style="color:#ff0066">AI</span><span id="aiPerc">0%</span></div><div class="bar-bg"><div class="bar-ai" id="aiBar"></div></div></div></div><div class="winner-pred" id="leadIndicator">⚡ EQUAL</div></div><div class="commentary" id="commentaryTxt">🎮 SELECT MODE & PRESS START</div></div>
+
+<div class="overlay" id="startOverlay"><div class="glitch-title">MAZE OF FEAR</div><div style="font-family:monospace;color:#ff5555">BFS · DFS · A* | RACE TO GREEN EXIT</div><div style="color:#ff8866;font-size:12px;margin:5px">▼ MOBILE: TAP ANY CELL TO MOVE | PC: ARROWS/WASD ▼</div><button class="ovbtn" id="launchGameBtn">⟁ INITIATE RACE</button></div>
+<div class="overlay hide" id="winOverlay"><div class="glitch-title" id="winTitle">HUMAN WINS!</div><div class="win-stats" id="winStats"></div><button class="ovbtn" id="playAgainBtn">⟳ PLAY AGAIN</button></div>
+
+<script src="script.js"></script>
+</body>
+</html>
