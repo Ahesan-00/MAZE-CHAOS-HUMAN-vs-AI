@@ -1,4 +1,4 @@
-MAZE-CHAOS-HUMAN-vs-AI
+MAZE.CHAOS_HUMAN-vs-AI 🤖
 A Full-Stack Maze Competition Engine that facilitates a real-time challenge between a human player and an autonomous AI opponent.  
 📱 Universal Compatibility
 The engine is engineered with a mobile-first responsive approach, ensuring a seamless experience across all devices:  
