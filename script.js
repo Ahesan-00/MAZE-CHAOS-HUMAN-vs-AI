@@ -546,7 +546,7 @@ function resetGameLogic(){
     document.getElementById("startOverlay").classList.remove("hide");
     document.getElementById("winOverlay").classList.add("hide");
     document.getElementById("commentaryTxt").innerHTML = "🎮 READY. SELECT MODE & START";
- // 🔥 SIRF YE 1 LINE ADD KARO
+ 
     if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume();
 }
 function startRace(){
